@@ -1,0 +1,57 @@
+.homepage {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../images/bg1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+
+    .logo {
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+        object-fit: cover;
+        height: 2rem;
+        width: auto;
+    }
+
+    .result-sections {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .heading1 {
+            width: calc(100% - 4rem);
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 400;
+            text-align: left;
+            margin-top: 3rem;
+            padding: 0 2rem;
+        }
+
+        .result-componenets {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.resultActivated {
+    background-image: none;
+    background-color: #fff;
+}

@@ -1,0 +1,186 @@
+@media screen and (min-width:415px) and (max-width: 765px) {
+
+    // homepage component css
+    .homepage {
+        .result-sections {
+            .result-componenets {
+                width: 100%;
+                height: auto !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start !important;
+                align-items: center !important;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        .logo {
+            position: absolute;
+            right: 2rem;
+            top: 2rem;
+            object-fit: cover;
+            height: 2rem;
+            width: auto;
+        }
+
+    }
+
+    // filter component css
+
+    .filter {
+        width: calc(100% - 4rem) !important;
+        height: auto;
+        text-align: left;
+        padding: 0 2rem !important;
+    }
+
+    // searchResults component css
+    .search-results {
+        width: calc(100% - 4rem) !important;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 2rem !important;
+        gap: 1.6rem;
+        height: calc(100dvh - 4rem) !important;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+        margin-top: 2rem;
+    }
+
+    // search bar component css
+    .search-bar{
+        width: 90% !important;
+        margin-top: 7rem !important;
+    }
+    .ResultsActive {
+        width: 90% !important;
+        margin-top: 6rem !important;
+    }
+
+    // latestTrends component css
+    .latest-trends{
+        width: calc(90% - 3rem) !important;
+        top: 11.5rem !important;
+    }
+    .latestActive {
+        width: calc(90% - 3rem) !important;
+        top: 9.5rem !important;
+    }
+    .top-images {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        height: 12rem;
+        margin-top: 1rem;
+        gap: 5% !important;
+
+        .image {
+            height: 80%;
+            width: calc(30% - 2px) !important;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+    }
+
+}
+
+@media screen and (max-width: 415px) {
+
+    // homepage component css
+    .homepage {
+        .result-sections {
+            .result-componenets {
+                width: 100%;
+                height: auto !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start !important;
+                align-items: center !important;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+    }
+
+    // filter component css
+
+    .filter {
+        width: calc(100% - 4rem) !important;
+        height: auto;
+        text-align: left;
+        padding: 0 2rem !important;
+    }
+
+    // searchResults component css
+    .search-results {
+        width: calc(100% - 4rem) !important;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center !important;
+        align-items: flex-start !important;
+        padding: 2rem !important;
+        gap: 1.6rem;
+        height: calc(100dvh - 4rem) !important;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+        margin-top: 2rem;
+
+        .product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 4px;
+            width: 100% !important;
+        }
+    }
+
+    // search bar component css
+    .search-bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 80% !important;
+        margin-top: 7rem;
+    }
+
+    // search bar component css
+    .ResultsActive {
+        width: 90% !important;
+        margin-top: 6rem !important;
+    }
+
+    // latestTrends component css
+    .latest-trends{
+        width: calc(90% - 3rem) !important;
+        top: 11.5rem !important;
+    }
+    .latestActive {
+        width: calc(90% - 3rem) !important;
+        top: 9.5rem !important;
+    }
+
+    .top-images {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        height: 12rem;
+        margin-top: 1rem;
+        gap: 10% !important;
+
+        .image {
+            height: 80%;
+            width: calc(45% - 2px) !important;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+    }
+}

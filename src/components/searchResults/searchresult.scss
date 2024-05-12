@@ -1,0 +1,121 @@
+// src/components/SearchResult.scss
+.search-results {
+  width: calc(100% - 16rem - 8rem);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 4rem;
+  gap: 1.6rem;
+  height: 100%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  width: 10rem;
+
+  .image-box{
+    width: 100%;
+    height: 13rem;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+    button{
+      display: none;
+      color: #fff;
+      cursor: pointer;
+    }
+    .fa-heart {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 1rem;
+      color: #fff;
+      cursor: pointer;
+    }
+    .red-heart{
+      color: red;
+    }
+    &:hover button {
+      display: inline;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      text-align: center;
+      width: 100%;
+      height: 2rem;
+      background-color: #6d83ff;
+      border: none;
+      outline: none;
+      animation: buttonUp 0.5s ease;
+    }
+    @keyframes buttonUp {
+      0%{height: 0;opacity: 0;}
+      100%{height: 2rem;opacity: 1;}
+    }
+  }
+  .product-name{
+    width: 100%;
+    font-size: 0.9rem;
+    text-align: left;
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+  }
+
+  .price{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+
+    .total-price{
+      position: relative;
+      color: #cdccc8;
+      &::before {
+          position: absolute;
+          content: "";
+          left: 50%;
+          top: 60%;
+          transform: translate(-50%,-50%);
+          width: 100%;
+          height: 1px;
+          background-color: #cdccc8;
+      }
+    }
+    .discounted-price {
+      color: #6d84ff;
+    }
+
+  }
+
+  .rating{
+    width: 100%;
+    text-align: left;
+    font-size: 0.8rem;
+
+    .total-ratings{
+      margin: 0 2px;
+    }
+    .yellow-star {
+      color: #fdd33d;
+    }
+
+    .gray-star {
+      color: #cdccc8;
+    }
+  }
+}
