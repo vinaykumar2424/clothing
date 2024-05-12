@@ -4,7 +4,6 @@ import '../responsiveCSS/responsive.scss'
 import SearchBar from '../searchBar/SearchBar';
 import Filter from '../filter/Filter';
 import SearchResult from '../searchResults/SearchResult';
-import Wishlist from '../wishlist/Wishlist';
 import logo from '../../images/logo.png'
 import LatestTrends from '../latestTrands/LatestTrends';
 
